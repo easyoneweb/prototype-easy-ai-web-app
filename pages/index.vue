@@ -1,7 +1,14 @@
 <template>
-  <div class="logo">
-    <img src="@/assets/img/eow-logo.png" alt="ООО ИзиВанВеб" /> AI
+  <div
+    class="h-screen flex flex-col justify-center items-center p-3 bg-easy-ai"
+  >
+    <TheHeader />
+    <ConversationSection />
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<style>
+.bg-easy-ai {
+  background-image: url('~/assets/img/bg.png');
+}
+</style>
