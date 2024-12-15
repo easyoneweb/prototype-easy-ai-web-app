@@ -30,7 +30,7 @@
         'bg-slate-200': messageIsCode(message),
       }"
     >
-      <pre v-if="messageIsCode(message)">
+      <pre v-if="messageIsCode(message) && message?.text.trim().length">
           {{ message.text }}
         </pre
       >
